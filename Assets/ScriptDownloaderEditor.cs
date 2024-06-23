@@ -249,7 +249,7 @@ public class ScriptDownloaderEditor : EditorWindow
         // Add remote repository
         if (!string.IsNullOrEmpty(RemoteRepositoryURL))
         {
-            RunGitCommand($"remote add origin {RemoteRepositoryURL}", projectPath);
+            // RunGitCommand($"remote add origin {RemoteRepositoryURL}", projectPath);
 
             // Push to the remote repository
             RunGitCommand("push -u origin master", projectPath);
