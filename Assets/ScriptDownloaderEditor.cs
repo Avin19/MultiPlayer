@@ -252,7 +252,7 @@ public class ScriptDownloaderEditor : EditorWindow
             // RunGitCommand($"remote add origin {RemoteRepositoryURL}", projectPath);
 
             // Push to the remote repository
-            RunGitCommand("push -u origin master", projectPath);
+            RunGitCommand("push -u origin main", projectPath);
         }
 
         UnityEngine.Debug.Log("Initialized a new Git repository and added remote repository.");
