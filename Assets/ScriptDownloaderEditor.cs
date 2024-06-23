@@ -243,6 +243,7 @@ public class ScriptDownloaderEditor : EditorWindow
         string projectPath = Application.dataPath.Replace("/Assets", "");
         RunGitCommand("init", projectPath);
         RunGitCommand("add .", projectPath);
+        RunGitCommand("branch -M main", projectPath);
         RunGitCommand("commit -m \"Initial commit\"", projectPath);
 
         // Add remote repository
